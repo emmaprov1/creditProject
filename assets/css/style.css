@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+:root{
+    --primary:#23133a;
+    --secondary:#f96e3c;
+    --tertiary:#f9cbcd;
+    --elementary:#5fd6d3;
+    --color-light-1:#ffffff;
+    --color-light-2:#000000;
+    --color-light-3:#000000;
+    --color-light-4:#000000;
+    --color-dark-1:#000000; 
+    --color-dark-2:#000000; 
+    --color-dark-3:#000000; 
+    --color-dark-4:#000000;   
+    --main-font-family:'Work Sans', sans-serif;  
+}
+
+html{
+    scroll-behavior: smooth;
+}
+body{ 
+    font-family: var(--main-font-family); 
+    box-sizing: border-box;
+}
+
+.btn--secondary{
+    background-color:var(--secondary);
+    font-weight:500;
+    font-size:1.1rem;
+    color: var(--color-light-1)
+}
+
+ /** Navigation***/
+ @media(min-width:800px){
+ .nav-item{
+     padding: 0px 70px;
+ }
+}
+.navbar-toggler {
+    padding: .25rem .75rem;
+    font-size: 1.25rem;
+    line-height: 1;
+    background-color: transparent;
+    border: 1px solid transparent;
+    border-radius: .25rem;
+}
+
+ /****section***/
+ .top-nav{
+    height: 40px;
+    background-color:var(--primary)
+ }
+ .nav-main{
+    height: 60px;
+    background-color:var(--color-light-1)
+}
+
+.header-banner{
+    height:85vh;
+    background-image: url('../image/headerbg.jpg');
+    background-size:cover;
+    background-attachment: fixed;
+    background-color:var(--primary)
+}
+ 
+.header-caption{
+    font-size:4rem;
+    color:var(--color-light-1);
+    font-weight:500;
+    padding-left:50px;
+    padding-top:200px;
+}
+.header-inner-img{
+    position:absolute;
+    top:200px;
+    right:100px;
+    width:600px;
+    transition:all 1s ease-in-out
+}
+
+ /****section***/
+.section{
+    padding: 50px 0px
+}
+.section-credit-card{ 
+}
+.section-credit--h2{
+    font-size: 1.5rem;
+}
+
+.section-credit--shadow{
+    box-shadow: 0 .1rem .1rem rgba(0, 0, 0, 0.041);
+}
+.section-credit-list li{
+    margin-top:.8rem
+}
+.section-credit--h3{
+    font-size:.9rem
+}
+.section-credit-status{
+    padding:9px;
+    background-color:var(--elementary);
+    color:var(--color-light-1);
+    border-radius:50px;
+    font-weight:600;
+    width: 100px !important;
+    cursor: pointer;
+    font-size:.8rem;
+}
+
+.credit-aproval{
+    font-size: 1rem;
+    font-weight:600;
+}
+
+.card-footer {
+    border-top: 2px solid rgba(3, 3, 3, 0.103)!important;
+}
+
+
+/**MEDIA QUERIES***/
+@media(max-width:560px){
+    section{
+        padding-top:14px !important;
+    }
+
+    .section-credit--h2{
+        font-size:1rem
+    }
+    .section-card-container{
+        padding:10px !important
+    }
+    img.header-inner-img{
+        position: absolute;
+        right:0 !important;
+        top:300px !important;
+        margin-bottom:100px !important;
+        width:300px;
+        transition:all 1s ease-in-out; 
+    }
+    .header-caption{
+        font-size:2rem !important ; 
+        padding-top:50px;
+    }
+    .card-body{
+        padding:1rem
+    }
+
+    .py--4{
+        padding-top:4px !important;
+        padding-bottom:2px !important;
+    }
+
+    .section-credit-list{
+        padding-left:13px !important
+    }
+    .section-card-satatus-wraper{
+        padding-bottom:24px !important;
+    }
+    .section-credit-list li{
+        font-size:.9rem
+    }
+    .card-footer a{
+        font-size: .9rem!important;
+    }
+}
+
+@media(min-width:600px) and (max-width:1085px){
+    img.header-inner-img{
+        position: absolute;
+        right:0 !important;
+        top:280px !important;
+        margin-bottom:90px !important;
+        width:390px;
+        transition:all 1s ease-in-out; 
+    }
+    .header-caption{ 
+        padding-top:50px;
+    }
+}
